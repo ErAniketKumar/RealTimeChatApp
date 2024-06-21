@@ -148,15 +148,16 @@ io.on("connection", (socket) => {
 });
 
 function buildMsg(name, text) {
-	return {
-		name,
-		text,
-		time: new Intl.DateTimeFormat("default", {
-			hour: "numeric",
-			minute: "numeric",
-			second: "numeric",
-		}).format(new Date()),
-	};
+    return {
+        name,
+        text,
+        time: new Intl.DateTimeFormat("default", {
+            hour: "numeric",
+            minute: "numeric",
+            second: "numeric",
+            timeZone: "Asia/Kolkata"
+        }).format(new Date()),
+    };
 }
 
 //user functions
