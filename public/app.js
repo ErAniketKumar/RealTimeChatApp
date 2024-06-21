@@ -1,4 +1,4 @@
-const socket = io("http://localhost:3500");
+const socket = io("https://lovejivan.onrender.com");
 
 const msgInput = document.querySelector("#message");
 const chatRoom = document.querySelector("#room");
